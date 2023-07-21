@@ -22,6 +22,7 @@ const projects = {
     technology3: 'JAVASCRIPT',
     image: './vectors/Snapshoot Portfolio.png',
     paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    demoLink: 'https://mrcbq.github.io/coinmarket/#/',
   },
 
   availability: {
@@ -70,7 +71,7 @@ function showNewSection(projectId) {
                   </div>
                           <div class='popup-align'><div class='card-description2'><p class='popup-p'>${projects[projectId].paragraph}</p>
                           <div><ul class= 'tags-list-style-none'><li class='tag-description1'><p class='new-section-technology'>${projects[projectId].technology1}</p></li><li class='tag-description2'><p class='new-section-technology'>${projects[projectId].technology2}</p></li><li class='tag-description3'><p>${projects[projectId].technology3}</p></li></ul>
-                          <div><div><div class=button-div><button class=see-btn>See Live   <img src="./vectors/live-icon.png" alt=""></button><button class='see-btn'>See Source  <img src="./vectors/github-link.png" alt=""></button></div></div></div></div></div>`;
+                          <div><div><div class=button-div><button class=see-btn><a href=${projects[projectId].demoLink}>See Live   <img src="./vectors/live-icon.png" alt=""></button><button class='see-btn'>See Source  <img src="./vectors/github-link.png" alt=""></button></div></div></div></div></div>`;
   container.appendChild(newSection);
   newSection.style.display = 'flex';
 }
